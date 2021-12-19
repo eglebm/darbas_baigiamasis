@@ -21,7 +21,30 @@
     }
 
     .container {
-        position: relative;
+        position: relative; 
+        display: flex;
+    }
+    
+    .text-box {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: space-between;
+    }
+
+    h1, p, button.download {
+        color: #F5F5F5;
+    }
+
+    .logo {
+        width: 246.74px;
+    }
+
+
+   .download {
+        border: 2px solid #FFFFFF;
+        padding: 12px 22px;
+        background-color: #42080800;
+        color: #FFFFFF;
     }
 
     .form-box {
@@ -41,7 +64,8 @@
             }
 
             input:checked ~ label:before {
-                background: red;
+                background: #41D395;
+            
             }
 
             label {
