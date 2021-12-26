@@ -52,3 +52,29 @@ const swiper = new Swiper('.reviews-swiper', {
         },
       }
 });
+
+//
+// Get weather data from openweather API
+//
+
+const city ="Cuddington";
+const url = "https://api.openweathermap.org/data/2.5/weather?q="+city+"&units=metric&appid=5ccac2d1b356d2a66489fe488e39791b";
+const weatherElement = document.getElementById("weather-in-celsius");
+
+function getCurrentWeatherInCelsius() {
+    const http = new XMLHttpRequest();
+    http.open("GET", url);
+    http.addEventListener('load', function() {
+        const response = JSON.parse(http.response);
+        const temperature = Math.round(response.main.temp);
+
+        if (temperature > 0) {
+            weatherElement.innerText = "+" + temperature;
+        } else {
+            weatherElement.innerText = temperature;
+        }
+    })
+    http.send();
+}
+
+window.addEventListener('load', getCurrentWeatherInCelsius)
