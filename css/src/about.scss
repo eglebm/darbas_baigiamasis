@@ -51,6 +51,7 @@
     }
     .tab-content {
         display: none;
+        animation: tab-reveal 0.5s forwards;
 
         &.active {
             display: block;
