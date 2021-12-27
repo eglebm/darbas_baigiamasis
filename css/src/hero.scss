@@ -178,20 +178,3 @@
         }
     }
 }
-@media (max-width: 800px) { 
-    .hero {
-        display: flex;
-    }
-    
-    .container {
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
-        .text-box  {
-            margin-bottom: 30px;
-        }
-
-        .logo, .hero-h1, .text-box-text {
-            padding-bottom: 50px;
-        }
-}
