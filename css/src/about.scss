@@ -38,6 +38,16 @@
                 box-shadow: 0px 3px 6px #00000029;
                 cursor: pointer;
                 transition: 0.3s ease-in-out;
+                font-size: 14px;
+                font-weight: bold;
+                text-transform: uppercase;
+                color: #FFFFFF;
+               
+        
+                span {
+                    transform: rotate(-45deg);
+                           
+                }
 
                 &:not(:last-child) {
                     margin-bottom: 20px;
@@ -45,6 +55,8 @@
 
                 &.active {
                     background-color: #E27866;
+                    color: #FFFFFF;
+            
                 }
             }
         }
@@ -54,7 +66,62 @@
         animation: tab-reveal 0.5s forwards;
 
         &.active {
-            display: block;
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+            padding-left: 50px;
         }
+    }
+}
+.about-img-small {
+    height: 168px;
+    width: 168px;
+}
+
+.about-img-landscape {
+    height: 177px;
+    width: 362px;
+}
+
+
+.tab-content {
+    display: flex;
+    flex-wrap: wrap;
+    animation: tab-reveal 0.5s forwards;
+   
+    
+    .about-content {
+    display: flex;
+    flex-direction: column;
+    margin-right: 79px;
+
+
+    h2 {
+        color: #FFFFFF;
+        font-size: 36px;
+        font-weight: bold;
+        text-align: left;
+        margin-bottom: 33px;
+    }
+
+    p {
+        color: #FFFFFF;
+        text-align: left;
+    }
+    
+
+    &.active {
+        display: flex;
+        flex-wrap: wrap;
+        display: contents;
+    }
+    }
+}
+.about-images {
+    display: block;
+
+    .top-images {
+        display: inline-flex;
+        ;
     }
 }
