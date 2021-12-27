@@ -1,18 +1,49 @@
 .reviews {
-    padding: 200px 0;
+    padding: 20px 0;
 
     h2 {
+        position: relative;
         text-align: center;
         text-transform: uppercase;
+        font-size: 36px;
+        font-weight: bold;
+        padding-bottom: 90px;
+        padding-top: 70px;
+
+        &:after {
+            content: "";
+            position: absolute;
+            width: 90px;
+            height: 2px;
+            margin-top: 90px;
+            left: 45%;
+            background-color: #6696E2;
+        }
     }
+
+            @media (max-width: 990px) {
+                left: 42%;
+            }
+
 
     .reviews-swiper {
         .single-review {
             user-select: none;
-            .text {
+            padding-bottom: 30px;
+            .main-text {
                 background-color: #6696E2;
                 border-radius: 8px;
                 padding: 20px;
+                position: relative;
+            }
+                &::after {
+                    content: "";
+                    position: absolute;
+                    bottom: 100px;
+                    border-left: 35px solid rgb(0 0 0 / 0%);
+                    border-right: 35px solid rgb(0 0 0 / 0%);
+                    border-top: 35px solid rgb(102 150 226);
+                }
 
                 p {
                     font-size: 16px;
@@ -45,4 +76,13 @@
             }
         }
     }
+
+
+.client {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 5px;
+    user-select: none;
 }
