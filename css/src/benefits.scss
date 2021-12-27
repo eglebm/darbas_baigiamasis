@@ -1,0 +1,84 @@
+.benefits {
+    padding-top: 100px;
+    text-align: center;
+
+
+    @media (max-width: 990px) {
+        padding-bottom: 60px;
+    }
+
+    .benefits-h2 {
+        position: relative;
+        padding-bottom: 50px;
+        font-size: 40px;
+        color: #212121;
+        font-weight: 600;
+
+        &:after {
+            content: "";
+            position: absolute;
+            width: 64px;
+            height: 2px;
+            margin-top: 80px;
+            background-color: #E27866;
+            left: 48%;
+            opacity: 1;
+        }
+    }
+
+    .benefits-box {
+        display: flex;
+        padding-bottom: 40px;
+        justify-content: space-around;
+        padding-left: 220px;
+        padding-right: 220px;
+
+        @media (max-width: 830px) { 
+            display: inline;}
+    }
+
+    .benefits-h3 {
+        color: #3a3737;
+        font-weight: 400;
+        padding-top: 30px ;
+    }
+
+    .benefits-row {
+        flex-direction: column;
+        padding-top: 60px;
+
+        @media (max-width: 800px) { 
+            display: flex;
+            flex-wrap: wrap;
+            align-items: stretch;
+            align-content: stretch;
+        }
+    }
+    
+    .p1 {
+        font-size: 14px;
+        font-weight: 300;
+        color: #919294;
+    }
+
+    .p2 {
+        text-align: center;
+        font-size: 13px;
+        font-weight: 300;
+        color: #919294;
+        padding-top: 30px;
+        padding-bottom: 70px;
+        width: 290px;
+
+        @media (max-width: 800px) { 
+            padding-right: 40px;
+            padding-left: 40px;
+            width: 100%;
+    }
+}
+
+    .middle {
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+}
