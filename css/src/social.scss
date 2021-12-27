@@ -1,0 +1,38 @@
+.social-media-row {
+    display: flex;
+    background-color:#FFFFFF;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    .social-media-text {
+        flex-direction: column;
+        width: 40%;
+
+        h2 {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 6px;
+        }
+
+        p {
+            font-size: 14px;
+            color: #86878B;
+        }
+    }
+    
+    .social-media-icons {
+        display: contents;
+
+        img {
+            transition: 0.3s ease-in-out;
+
+            &:hover {
+                cursor: pointer;
+                transform: translateY(-3px);
+            }
+        }
+    }  
+
+}

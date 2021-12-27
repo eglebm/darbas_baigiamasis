@@ -1,4 +1,3 @@
-
 //
 // About section tab navigation
 //
