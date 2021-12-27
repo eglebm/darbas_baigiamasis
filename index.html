@@ -41,29 +41,31 @@
             <div class="container">
                 <div class="text-box"> 
                     <img class="logo" src="images/logo.svg" alt="Logo">
-                    <h1>Explained propriety of out perpetual to you</h1>
+                    <h1 class="hero-h1">Explained propriety of out perpetual to you</h1>
                     <p class="text-box-text">Insipidity the sufficient discretion imprudence resolution sir him decisively. Proceed how any engaged visitor. Explained propriety of out perpetual his you. Feel sold off felt nay rose met you. We so entreaties cultivated astonished is.</p>
                     <button class="download">DOWNLOAD</button>
                 </div>
                 <div class="form-box">
-                    <form>
-                        <h2>Try your<span style="color:#E27866" > FREE </span>trial TODAY</h2>
-                        <p>Your details</p>
-                        <input type= "text" placeholder="  First Name">
-                        <input type= "text" placeholder="  Last Name">
-                        <input type= "number" placeholder="  Phone Number">
-                        <p class="">Type of subscription</p>
-
+                    <form action="register.php" method="GET" id="pricing-form">
                         <div class="form-row">
-                            <div class="radio-input-wrap">
-                                <input type="radio" name="subscription" id="subscription-monthly" checked>
-                                <label for="subscription-monthly">Monthly</label>
+                            <h2 class="form-h2">Try your<span style="color:#E27866" > FREE </span>trial TODAY</h2>
+                            <h6 class="form-h6">Your details</h6>
+                            <input type= "text" placeholder="  First Name" required>
+                            <input type= "text" placeholder="  Last Name" required>
+                            <input type= "number" placeholder="  Phone Number" required>
+                            <h6 class="form-h6">Type of subscription</h6>
+                            <div class="form-row-input">
+                                <div class="radio-input-wrap">
+                                    <input type="radio" name="subscription" id="subscription-monthly" checked>
+                                    <label for="subscription-monthly">Monthly</label>
+                                </div>
+                                <div class="radio-input-wrap">
+                                    <input type="radio" name="subscription" id="subscription-yearly">
+                                    <label for="subscription-yearly">Yearly</label>
+                                </div>
+                                
                             </div>
-
-                            <div class="radio-input-wrap">
-                                <input type="radio" name="subscription" id="subscription-yearly">
-                                <label for="subscription-yearly">Yearly</label>
-                            </div>
+                            <button class="form-bottom" type="submit">GET STARTED</button>
                         </div>
                     </form>
                 </div>

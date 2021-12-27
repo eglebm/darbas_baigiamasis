@@ -29,10 +29,40 @@
         flex-direction: column;
         flex-wrap: wrap;
         align-content: space-between;
+        display: flex;
+        justify-content: space-between;
     }
 
-    h1, p, button.download {
+    h1 {
+        position: relative;
+        padding-right: 320px;
         color: #F5F5F5;
+   
+        &:after {
+            content: "";
+            position: absolute;
+            width: 84px;
+            height: 2px;
+            top: 85px;
+            left: 5px;
+            background-color: rgb(255 255 255);
+        }
+    }
+
+    button.download {
+        color: #F5F5F5;
+        width: 135px;
+    }
+
+    p {
+        padding-right: 90px;
+        color: #F5F5F5;
+    }
+
+    h6 {
+        color: #1C1C1C;
+        font-size: 16px;
+        font-weight: bold;
     }
 
     .logo {
@@ -51,21 +81,82 @@
         max-width: 500px;
         width: 100%;
         background-color: #fff;
-        border-radius: 20px;
-        padding: 20px;
+        border-radius: 5px;
 
         .form-row {
             display: flex;
+            flex-direction:column;
+            font-size: 9px;
+            font-weight: bold;
         }
+            .form-h2 {
+                color: #1C1C1C;
+                font-size: 20px;
+                font-weight: bold;
+                padding-left: 50px;
+                padding-right: 50px;
+                padding-top: 17px;
+                padding-bottom: 17px;
+                border-top-left-radius: 20px;
+                border-top-right-radius: 20px;
+                background-color: #F5F5F5;
+            }
+
+            .form-h6 {
+                margin-top: 30px;
+                margin-left: 50px;
+            }
+
+            input {
+                font-size: 12px;
+                font-family: 'Montserrat', sans-serif;
+                margin-top: 35px;
+                margin-left: 50px;
+                margin-right: 50px;
+                border-top: rgb(255 255 255 / 0%);
+                border-top-width: initial;
+                border-top-style: initial;
+                border-top-color: rgb(255 255 255 / 0%);
+                border-left: rgb(255 255 255 / 0%);
+                border-right: rgb(255 255 255 / 0%);
+                border-bottom: 1px solid rgb(194 194 194 / 93%);
+                width: 260px;
+            }
+               
+            .form-row-input {
+                display: flex;
+                justify-content: flex-start;
+                font-size: 9px;
+                margin-top: 20px;
+                margin-left: 50px;
+                margin-bottom: 40px;
+            }
+
+            .form-bottom {
+                border-style: none;
+                color: rgb(255 255 255);
+                font-size: 24px;
+                padding-top: 17px;
+                padding-bottom: 16px;
+                text-align: center;
+                background-color: rgb(65 211 149);
+                border-bottom-left-radius: 5px;
+                border-bottom-right-radius: 5px;
+                cursor: pointer;
+            }
+
 
         .radio-input-wrap {
+            margin-right: 17px;
+
             input {
                 display: none;
+                
+
             }
 
             input:checked ~ label:before {
                 background: #41D395;
-            
             }
 
             label {
@@ -80,8 +171,27 @@
                     border-radius: 50%;
                     border: 1px solid #41D395;
                     transition: 0.3s ease-in-out;
+                    box-shadow: inset 0px 0px 0px 2px #fff;
+                    margin-right: 5px;            
                 }
             }
         }
     }
+}
+@media (max-width: 800px) { 
+    .hero {
+        display: flex;
+    }
+    
+    .container {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+        .text-box  {
+            margin-bottom: 30px;
+        }
+
+        .logo, .hero-h1, .text-box-text {
+            padding-bottom: 50px;
+        }
 }
